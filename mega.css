@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: rgb(247, 255, 247);
+}
+
+header h1 {
+  color: rgb(26, 59, 95);
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding: 1rem;
+  margin-bottom: -0.75rem;
+}
+
+.numbers-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+}
+
+.number {
+  color: green;
+  background-color: white;
+  font-size: 1.1rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 1px solid green;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.1s ease-in;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.selected {
+  background-color: green;
+  color: white;
+  font-weight: bold;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.buttons button {
+  padding: 0.5rem 0.5rem;
+  background-color: rgb(26, 59, 95);
+  margin: 0 1.5rem ;
+  border: none;
+  color: white;
+  transition: all 0.3s ease-in;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.buttons button span {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.buttons button:hover {
+  background-color: rgb(63, 89, 119);
+}
